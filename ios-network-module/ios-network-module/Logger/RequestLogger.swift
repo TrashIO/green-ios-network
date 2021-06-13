@@ -15,6 +15,15 @@ struct ApiLogRequestModel {
     var statusCode: String?
     var endpoint: String
     var isSuccess: Bool?
+    
+    func toDetailType() -> [DetailViewType] {
+        var data: [DetailViewType] = []
+        data.append(.heading(endpoint))
+        data.append(.curl(cURL ?? ""))
+        data.append(.responseJSON(responseData ?? ""))
+        
+        return data
+    }
 }
 
 class RequestLogger {

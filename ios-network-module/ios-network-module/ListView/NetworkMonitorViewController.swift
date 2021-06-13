@@ -86,8 +86,12 @@ class NetworkMonitorViewController: UIViewController {
     func getLogs() {
         self.dataSource?.removeAll()
         self.dataSource = RequestLogger.shared.dataSource
-        
-        print(self.dataSource?.count)
+    }
+    
+    func routeToDetail(_ data: ApiLogRequestModel) {
+        let vc = DetailViewController(nibName: "DetailViewController", bundle: nil)
+        vc.dataSource = data.toDetailType()
+        self.present(vc, animated: true, completion: nil)
     }
    
     @IBAction func buttonLeftAction(_ sender: Any) {
@@ -119,6 +123,13 @@ extension NetworkMonitorViewController: UITableViewDelegate, UITableViewDataSour
         let cell = tableView.dequeueReusableCell(withIdentifier: "RequestItemCell", for: indexPath) as! RequestItemCell
         cell.setup(data)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        guard let detailsData = dataSource?[indexPath.row] else { return }
+        routeToDetail(detailsData)
     }
     
 }
