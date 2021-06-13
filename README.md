@@ -10,5 +10,5 @@ A Reusable Network Module that can be used across the project without any strong
 * Development View: You can log the cURL and their response.   
 
 ### Screenshots
-(https://github.com/TrashIO/green-ios-network/blob/main/development-screen.png)
+![Development Logging Screen](https://github.com/TrashIO/green-ios-network/blob/main/development-screen.png)
 
