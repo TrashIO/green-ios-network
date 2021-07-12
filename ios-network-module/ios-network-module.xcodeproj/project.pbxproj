@@ -34,8 +34,19 @@
 		4681DF8E2676905500C1D58A /* HeadingSectionLabelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4681DF8D2676905500C1D58A /* HeadingSectionLabelCell.xib */; };
 		4681DF912676A54B00C1D58A /* HeadingSectionLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4681DF902676A54B00C1D58A /* HeadingSectionLabelCell.swift */; };
 		4681DF952676A8CC00C1D58A /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4681DF942676A8CC00C1D58A /* Utility.swift */; };
+		46CE4466269CEDD000544A3E /* ListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CE4465269CEDD000544A3E /* ListTests.swift */; };
 		81DCEDB5CC886E9404A46629 /* Pods_ios_network_module.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7718943EAFD1303D5D620194 /* Pods_ios_network_module.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		46CE4455269CDC8E00544A3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4681DF032674BD6F00C1D58A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4681DF0A2674BD6F00C1D58A;
+			remoteInfo = "ios-network-module";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		325AEC1F1C6054083E1A7CED /* Pods-ios-network-module.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-network-module.release.xcconfig"; path = "Target Support Files/Pods-ios-network-module/Pods-ios-network-module.release.xcconfig"; sourceTree = "<group>"; };
@@ -68,6 +79,9 @@
 		4681DF8D2676905500C1D58A /* HeadingSectionLabelCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeadingSectionLabelCell.xib; sourceTree = "<group>"; };
 		4681DF902676A54B00C1D58A /* HeadingSectionLabelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingSectionLabelCell.swift; sourceTree = "<group>"; };
 		4681DF942676A8CC00C1D58A /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		46CE4450269CDC8E00544A3E /* ios-network-module-tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-network-module-tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46CE4454269CDC8E00544A3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46CE4465269CEDD000544A3E /* ListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTests.swift; sourceTree = "<group>"; };
 		69559975B23F0C93DAB718F5 /* Pods-ios-network-module.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-network-module.debug.xcconfig"; path = "Target Support Files/Pods-ios-network-module/Pods-ios-network-module.debug.xcconfig"; sourceTree = "<group>"; };
 		7718943EAFD1303D5D620194 /* Pods_ios_network_module.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_network_module.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -81,6 +95,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		46CE444D269CDC8E00544A3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -88,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				4681DF0D2674BD6F00C1D58A /* ios-network-module */,
+				46CE4451269CDC8E00544A3E /* ios-network-module-tests */,
 				4681DF0C2674BD6F00C1D58A /* Products */,
 				4B11515787A1CF214944EEFB /* Pods */,
 				C92252516885DF620C8E1A41 /* Frameworks */,
@@ -98,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				4681DF0B2674BD6F00C1D58A /* ios-network-module.app */,
+				46CE4450269CDC8E00544A3E /* ios-network-module-tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -225,6 +248,15 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		46CE4451269CDC8E00544A3E /* ios-network-module-tests */ = {
+			isa = PBXGroup;
+			children = (
+				46CE4454269CDC8E00544A3E /* Info.plist */,
+				46CE4465269CEDD000544A3E /* ListTests.swift */,
+			);
+			path = "ios-network-module-tests";
+			sourceTree = "<group>";
+		};
 		4B11515787A1CF214944EEFB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -264,6 +296,24 @@
 			productReference = 4681DF0B2674BD6F00C1D58A /* ios-network-module.app */;
 			productType = "com.apple.product-type.application";
 		};
+		46CE444F269CDC8E00544A3E /* ios-network-module-tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46CE4457269CDC8E00544A3E /* Build configuration list for PBXNativeTarget "ios-network-module-tests" */;
+			buildPhases = (
+				46CE444C269CDC8E00544A3E /* Sources */,
+				46CE444D269CDC8E00544A3E /* Frameworks */,
+				46CE444E269CDC8E00544A3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46CE4456269CDC8E00544A3E /* PBXTargetDependency */,
+			);
+			name = "ios-network-module-tests";
+			productName = "ios-network-module-tests";
+			productReference = 46CE4450269CDC8E00544A3E /* ios-network-module-tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -275,6 +325,10 @@
 				TargetAttributes = {
 					4681DF0A2674BD6F00C1D58A = {
 						CreatedOnToolsVersion = 12.3;
+					};
+					46CE444F269CDC8E00544A3E = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 4681DF0A2674BD6F00C1D58A;
 					};
 				};
 			};
@@ -292,6 +346,7 @@
 			projectRoot = "";
 			targets = (
 				4681DF0A2674BD6F00C1D58A /* ios-network-module */,
+				46CE444F269CDC8E00544A3E /* ios-network-module-tests */,
 			);
 		};
 /* End PBXProject section */
@@ -308,6 +363,13 @@
 				4681DF8E2676905500C1D58A /* HeadingSectionLabelCell.xib in Resources */,
 				4681DF8A26767C0E00C1D58A /* DetailItemLabelCell.xib in Resources */,
 				4681DF182674BD7100C1D58A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46CE444E269CDC8E00544A3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,7 +445,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		46CE444C269CDC8E00544A3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46CE4466269CEDD000544A3E /* ListTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		46CE4456269CDC8E00544A3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4681DF0A2674BD6F00C1D58A /* ios-network-module */;
+			targetProxy = 46CE4455269CDC8E00544A3E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4681DF192674BD7100C1D58A /* LaunchScreen.storyboard */ = {
@@ -519,6 +597,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N7Z5XKT3P5;
 				INFOPLIST_FILE = "ios-network-module/Info.plist";
@@ -539,6 +618,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N7Z5XKT3P5;
 				INFOPLIST_FILE = "ios-network-module/Info.plist";
@@ -550,6 +630,46 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		46CE4458269CDC8E00544A3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N7Z5XKT3P5;
+				INFOPLIST_FILE = "ios-network-module-tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "co.in.greensyntax.network.module.ios-network-module-tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios-network-module.app/ios-network-module";
+			};
+			name = Debug;
+		};
+		46CE4459269CDC8E00544A3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N7Z5XKT3P5;
+				INFOPLIST_FILE = "ios-network-module-tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "co.in.greensyntax.network.module.ios-network-module-tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios-network-module.app/ios-network-module";
 			};
 			name = Release;
 		};
@@ -570,6 +690,15 @@
 			buildConfigurations = (
 				4681DF202674BD7100C1D58A /* Debug */,
 				4681DF212674BD7100C1D58A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46CE4457269CDC8E00544A3E /* Build configuration list for PBXNativeTarget "ios-network-module-tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46CE4458269CDC8E00544A3E /* Debug */,
+				46CE4459269CDC8E00544A3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
